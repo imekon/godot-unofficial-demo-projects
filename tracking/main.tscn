@@ -1,390 +1,393 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
-[ext_resource path="res://wall.tscn" type="PackedScene" id=1]
-[ext_resource path="res://floor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://flashingFloor.tscn" type="PackedScene" id=3]
-[ext_resource path="res://player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://flashingFloor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=6]
 
 [node name="root" type="Node2D"]
+
+script/script = ExtResource( 1 )
 
 [node name="walls" type="Node2D" parent="."]
 
 editor/display_folded = true
 
-[node name="wall" parent="walls" instance=ExtResource( 1 )]
+[node name="wall" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 160 )
 
-[node name="wall1" parent="walls" instance=ExtResource( 1 )]
+[node name="wall1" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 192, 160 )
 
-[node name="wall2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 160 )
 
-[node name="wall3" parent="walls" instance=ExtResource( 1 )]
+[node name="wall3" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 320, 160 )
 
-[node name="wall4" parent="walls" instance=ExtResource( 1 )]
+[node name="wall4" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 384, 160 )
 
-[node name="wall5" parent="walls" instance=ExtResource( 1 )]
+[node name="wall5" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 160 )
 
-[node name="wall6" parent="walls" instance=ExtResource( 1 )]
+[node name="wall6" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 224 )
 
-[node name="wall7" parent="walls" instance=ExtResource( 1 )]
+[node name="wall7" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 288 )
 
-[node name="wall8" parent="walls" instance=ExtResource( 1 )]
+[node name="wall8" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 352 )
 
-[node name="wall9" parent="walls" instance=ExtResource( 1 )]
+[node name="wall9" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 480 )
 
-[node name="wall10" parent="walls" instance=ExtResource( 1 )]
+[node name="wall10" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 544 )
 
-[node name="wall11" parent="walls" instance=ExtResource( 1 )]
+[node name="wall11" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 608 )
 
-[node name="wall12" parent="walls" instance=ExtResource( 1 )]
+[node name="wall12" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 672 )
 
-[node name="wall13" parent="walls" instance=ExtResource( 1 )]
+[node name="wall13" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 384, 672 )
 
-[node name="wall14" parent="walls" instance=ExtResource( 1 )]
+[node name="wall14" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 320, 672 )
 
-[node name="wall15" parent="walls" instance=ExtResource( 1 )]
+[node name="wall15" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 672 )
 
-[node name="wall16" parent="walls" instance=ExtResource( 1 )]
+[node name="wall16" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 192, 672 )
 
-[node name="wall17" parent="walls" instance=ExtResource( 1 )]
+[node name="wall17" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 672 )
 
-[node name="wall18" parent="walls" instance=ExtResource( 1 )]
+[node name="wall18" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 608 )
 
-[node name="wall19" parent="walls" instance=ExtResource( 1 )]
+[node name="wall19" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 544 )
 
-[node name="wall20" parent="walls" instance=ExtResource( 1 )]
+[node name="wall20" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 480 )
 
-[node name="wall21" parent="walls" instance=ExtResource( 1 )]
+[node name="wall21" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 416 )
 
-[node name="wall22" parent="walls" instance=ExtResource( 1 )]
+[node name="wall22" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 352 )
 
-[node name="wall23" parent="walls" instance=ExtResource( 1 )]
+[node name="wall23" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 288 )
 
-[node name="wall24" parent="walls" instance=ExtResource( 1 )]
+[node name="wall24" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 128, 224 )
 
-[node name="wall25" parent="walls" instance=ExtResource( 1 )]
+[node name="wall25" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 512, 352 )
 
-[node name="wall26" parent="walls" instance=ExtResource( 1 )]
+[node name="wall26" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 352 )
 
-[node name="wall27" parent="walls" instance=ExtResource( 1 )]
+[node name="wall27" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 640, 352 )
 
-[node name="wall28" parent="walls" instance=ExtResource( 1 )]
+[node name="wall28" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 352 )
 
-[node name="wall29" parent="walls" instance=ExtResource( 1 )]
+[node name="wall29" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 768, 352 )
 
-[node name="wall30" parent="walls" instance=ExtResource( 1 )]
+[node name="wall30" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 352 )
 
-[node name="wall31" parent="walls" instance=ExtResource( 1 )]
+[node name="wall31" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 288 )
 
-[node name="wall32" parent="walls" instance=ExtResource( 1 )]
+[node name="wall32" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 224 )
 
-[node name="wall33" parent="walls" instance=ExtResource( 1 )]
+[node name="wall33" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 896, 224 )
 
-[node name="wall34" parent="walls" instance=ExtResource( 1 )]
+[node name="wall34" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 224 )
 
-[node name="wall35" parent="walls" instance=ExtResource( 1 )]
+[node name="wall35" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 224 )
 
-[node name="wall36" parent="walls" instance=ExtResource( 1 )]
+[node name="wall36" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 288 )
 
-[node name="wall37" parent="walls" instance=ExtResource( 1 )]
+[node name="wall37" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 352 )
 
-[node name="wall38" parent="walls" instance=ExtResource( 1 )]
+[node name="wall38" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 416 )
 
-[node name="wall39" parent="walls" instance=ExtResource( 1 )]
+[node name="wall39" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 480 )
 
-[node name="wall40" parent="walls" instance=ExtResource( 1 )]
+[node name="wall40" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 544 )
 
-[node name="wall41" parent="walls" instance=ExtResource( 1 )]
+[node name="wall41" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1024, 608 )
 
-[node name="wall42" parent="walls" instance=ExtResource( 1 )]
+[node name="wall42" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 608 )
 
-[node name="wall43" parent="walls" instance=ExtResource( 1 )]
+[node name="wall43" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 896, 608 )
 
-[node name="wall44" parent="walls" instance=ExtResource( 1 )]
+[node name="wall44" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 608 )
 
-[node name="wall45" parent="walls" instance=ExtResource( 1 )]
+[node name="wall45" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 544 )
 
-[node name="wall46" parent="walls" instance=ExtResource( 1 )]
+[node name="wall46" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 480 )
 
-[node name="wall47" parent="walls" instance=ExtResource( 1 )]
+[node name="wall47" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 768, 480 )
 
-[node name="wall48" parent="walls" instance=ExtResource( 1 )]
+[node name="wall48" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 480 )
 
-[node name="wall49" parent="walls" instance=ExtResource( 1 )]
+[node name="wall49" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 544 )
 
-[node name="wall64 4" parent="walls" instance=ExtResource( 1 )]
+[node name="wall64 4" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 544 )
 
-[node name="wall52" parent="walls" instance=ExtResource( 1 )]
+[node name="wall52" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 608 )
 
-[node name="wall64" parent="walls" instance=ExtResource( 1 )]
+[node name="wall64" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 608 )
 
-[node name="wall53" parent="walls" instance=ExtResource( 1 )]
+[node name="wall53" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 672 )
 
-[node name="wall64 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall64 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 672 )
 
-[node name="wall54" parent="walls" instance=ExtResource( 1 )]
+[node name="wall54" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 736 )
 
-[node name="wall64 3" parent="walls" instance=ExtResource( 1 )]
+[node name="wall64 3" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 736 )
 
-[node name="wall55" parent="walls" instance=ExtResource( 1 )]
+[node name="wall55" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 800 )
 
-[node name="wall56" parent="walls" instance=ExtResource( 1 )]
+[node name="wall56" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 864 )
 
-[node name="wall59 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall59 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 384, 864 )
 
-[node name="wall593" parent="walls" instance=ExtResource( 1 )]
+[node name="wall593" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 768, 864 )
 
-[node name="wall601" parent="walls" instance=ExtResource( 1 )]
+[node name="wall601" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 768, 1248 )
 
-[node name="wall602" parent="walls" instance=ExtResource( 1 )]
+[node name="wall602" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 384, 1248 )
 
-[node name="wall595" parent="walls" instance=ExtResource( 1 )]
+[node name="wall595" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 864 )
 
-[node name="wall601 3" parent="walls" instance=ExtResource( 1 )]
+[node name="wall601 3" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 1248 )
 
-[node name="wall6014" parent="walls" instance=ExtResource( 1 )]
+[node name="wall6014" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 1248 )
 
-[node name="wall596" parent="walls" instance=ExtResource( 1 )]
+[node name="wall596" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 928 )
 
-[node name="wall603 3" parent="walls" instance=ExtResource( 1 )]
+[node name="wall603 3" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 928 )
 
-[node name="wall597" parent="walls" instance=ExtResource( 1 )]
+[node name="wall597" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 992 )
 
-[node name="wall603 4" parent="walls" instance=ExtResource( 1 )]
+[node name="wall603 4" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 992 )
 
-[node name="wall598" parent="walls" instance=ExtResource( 1 )]
+[node name="wall598" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 1056 )
 
-[node name="wall603 5" parent="walls" instance=ExtResource( 1 )]
+[node name="wall603 5" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 1056 )
 
-[node name="wall599" parent="walls" instance=ExtResource( 1 )]
+[node name="wall599" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 1120 )
 
-[node name="wall603" parent="walls" instance=ExtResource( 1 )]
+[node name="wall603" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 1120 )
 
-[node name="wall600" parent="walls" instance=ExtResource( 1 )]
+[node name="wall600" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 960, 1184 )
 
-[node name="wall603 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall603 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 1184 )
 
-[node name="wall57" parent="walls" instance=ExtResource( 1 )]
+[node name="wall57" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 512, 864 )
 
-[node name="wall59" parent="walls" instance=ExtResource( 1 )]
+[node name="wall59" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 320, 864 )
 
-[node name="wall60" parent="walls" instance=ExtResource( 1 )]
+[node name="wall60" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 864 )
 
-[node name="wall62 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall62 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 1248 )
 
-[node name="wall623" parent="walls" instance=ExtResource( 1 )]
+[node name="wall623" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 320, 1248 )
 
-[node name="wall61" parent="walls" instance=ExtResource( 1 )]
+[node name="wall61" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 896, 864 )
 
-[node name="wall62" parent="walls" instance=ExtResource( 1 )]
+[node name="wall62" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 896, 1248 )
 
-[node name="wall63" parent="walls" instance=ExtResource( 1 )]
+[node name="wall63" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 512, 1248 )
 
-[node name="wall58" parent="walls" instance=ExtResource( 1 )]
+[node name="wall58" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 864 )
 
-[node name="wall59 3" parent="walls" instance=ExtResource( 1 )]
+[node name="wall59 3" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 864 )
 
-[node name="wall594" parent="walls" instance=ExtResource( 1 )]
+[node name="wall594" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 704, 800 )
 
-[node name="wall601 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall601 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 640, 1248 )
 
-[node name="wall6013" parent="walls" instance=ExtResource( 1 )]
+[node name="wall6013" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 256, 1248 )
 
-[node name="wall595 2" parent="walls" instance=ExtResource( 1 )]
+[node name="wall595 2" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 864 )
 
-[node name="wall5953" parent="walls" instance=ExtResource( 1 )]
+[node name="wall5953" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 832, 1248 )
 
-[node name="wall5954" parent="walls" instance=ExtResource( 1 )]
+[node name="wall5954" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 448, 1248 )
 
-[node name="wall50" parent="walls" instance=ExtResource( 1 )]
+[node name="wall50" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 576, 480 )
 
-[node name="wall51" parent="walls" instance=ExtResource( 1 )]
+[node name="wall51" parent="walls" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 512, 480 )
 
@@ -392,419 +395,419 @@ transform/pos = Vector2( 512, 480 )
 
 editor/display_folded = true
 
-[node name="floor" parent="floors" instance=ExtResource( 2 )]
+[node name="floor" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 224 )
 
-[node name="floor4 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 288 )
 
-[node name="floor43" parent="floors" instance=ExtResource( 2 )]
+[node name="floor43" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 352 )
 
-[node name="floor46" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 416 )
 
-[node name="floor47" parent="floors" instance=ExtResource( 2 )]
+[node name="floor47" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 480 )
 
-[node name="floor52 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor52 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 928 )
 
-[node name="floor524" parent="floors" instance=ExtResource( 2 )]
+[node name="floor524" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 928 )
 
-[node name="floor48" parent="floors" instance=ExtResource( 2 )]
+[node name="floor48" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 544 )
 
-[node name="floor52" parent="floors" instance=ExtResource( 2 )]
+[node name="floor52" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 992 )
 
-[node name="floor53" parent="floors" instance=ExtResource( 2 )]
+[node name="floor53" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 992 )
 
-[node name="floor49" parent="floors" instance=ExtResource( 2 )]
+[node name="floor49" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 192, 608 )
 
-[node name="floor52 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor52 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 1056 )
 
-[node name="floor525" parent="floors" instance=ExtResource( 2 )]
+[node name="floor525" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 1120 )
 
-[node name="floor526" parent="floors" instance=ExtResource( 2 )]
+[node name="floor526" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 1120 )
 
-[node name="floor523" parent="floors" instance=ExtResource( 2 )]
+[node name="floor523" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 1056 )
 
-[node name="floor50" parent="floors" instance=ExtResource( 2 )]
+[node name="floor50" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 448, 416 )
 
-[node name="floor51" parent="floors" instance=ExtResource( 2 )]
+[node name="floor51" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 416 )
 
-[node name="floor1" parent="floors" instance=ExtResource( 2 )]
+[node name="floor1" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 224 )
 
-[node name="floor4" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 288 )
 
-[node name="floor5" parent="floors" instance=ExtResource( 2 )]
+[node name="floor5" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 352 )
 
-[node name="floor6" parent="floors" instance=ExtResource( 2 )]
+[node name="floor6" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 416 )
 
-[node name="floor7" parent="floors" instance=ExtResource( 2 )]
+[node name="floor7" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 480 )
 
-[node name="floor12 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor12 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 928 )
 
-[node name="floor125" parent="floors" instance=ExtResource( 2 )]
+[node name="floor125" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 928 )
 
-[node name="floor126" parent="floors" instance=ExtResource( 2 )]
+[node name="floor126" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 992 )
 
-[node name="floor127" parent="floors" instance=ExtResource( 2 )]
+[node name="floor127" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 1056 )
 
-[node name="floor128" parent="floors" instance=ExtResource( 2 )]
+[node name="floor128" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 1120 )
 
-[node name="floor129" parent="floors" instance=ExtResource( 2 )]
+[node name="floor129" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 1184 )
 
-[node name="floor130" parent="floors" instance=ExtResource( 2 )]
+[node name="floor130" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 1184 )
 
-[node name="floor123" parent="floors" instance=ExtResource( 2 )]
+[node name="floor123" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 928 )
 
-[node name="floor8" parent="floors" instance=ExtResource( 2 )]
+[node name="floor8" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 544 )
 
-[node name="floor12 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor12 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 992 )
 
-[node name="floor124" parent="floors" instance=ExtResource( 2 )]
+[node name="floor124" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 992 )
 
-[node name="floor9" parent="floors" instance=ExtResource( 2 )]
+[node name="floor9" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 256, 608 )
 
-[node name="floor12" parent="floors" instance=ExtResource( 2 )]
+[node name="floor12" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 1056 )
 
-[node name="floor14" parent="floors" instance=ExtResource( 2 )]
+[node name="floor14" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 1120 )
 
-[node name="floor15" parent="floors" instance=ExtResource( 2 )]
+[node name="floor15" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 1120 )
 
-[node name="floor13" parent="floors" instance=ExtResource( 2 )]
+[node name="floor13" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 1056 )
 
-[node name="floor10" parent="floors" instance=ExtResource( 2 )]
+[node name="floor10" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 416 )
 
-[node name="floor11" parent="floors" instance=ExtResource( 2 )]
+[node name="floor11" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 416 )
 
-[node name="floor2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 224 )
 
-[node name="floor4 4" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4 4" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 288 )
 
-[node name="floor45" parent="floors" instance=ExtResource( 2 )]
+[node name="floor45" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 352 )
 
-[node name="floor46 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 416 )
 
-[node name="floor463" parent="floors" instance=ExtResource( 2 )]
+[node name="floor463" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 480 )
 
-[node name="floor469" parent="floors" instance=ExtResource( 2 )]
+[node name="floor469" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 448, 928 )
 
-[node name="floor471" parent="floors" instance=ExtResource( 2 )]
+[node name="floor471" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 928 )
 
-[node name="floor472" parent="floors" instance=ExtResource( 2 )]
+[node name="floor472" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 992 )
 
-[node name="floor473" parent="floors" instance=ExtResource( 2 )]
+[node name="floor473" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 1056 )
 
-[node name="floor474" parent="floors" instance=ExtResource( 2 )]
+[node name="floor474" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 1120 )
 
-[node name="floor475" parent="floors" instance=ExtResource( 2 )]
+[node name="floor475" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 1184 )
 
-[node name="floor476" parent="floors" instance=ExtResource( 2 )]
+[node name="floor476" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 1184 )
 
-[node name="floor470" parent="floors" instance=ExtResource( 2 )]
+[node name="floor470" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 928 )
 
-[node name="floor465" parent="floors" instance=ExtResource( 2 )]
+[node name="floor465" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 544 )
 
-[node name="floor4693" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4693" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 992 )
 
-[node name="floor466" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 320, 608 )
 
-[node name="floor469 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor469 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 448, 1056 )
 
-[node name="floor4695" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4695" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 448, 1120 )
 
-[node name="floor4696" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4696" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 1120 )
 
-[node name="floor4694" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4694" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 1056 )
 
-[node name="floor467" parent="floors" instance=ExtResource( 2 )]
+[node name="floor467" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 576, 416 )
 
-[node name="floor468" parent="floors" instance=ExtResource( 2 )]
+[node name="floor468" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 416 )
 
-[node name="floor3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 224 )
 
-[node name="floor4 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 288 )
 
-[node name="floor44" parent="floors" instance=ExtResource( 2 )]
+[node name="floor44" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 352 )
 
-[node name="floor46 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 416 )
 
-[node name="floor464" parent="floors" instance=ExtResource( 2 )]
+[node name="floor464" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 480 )
 
-[node name="floor465 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor465 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 544 )
 
-[node name="floor4653" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4653" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 384, 608 )
 
-[node name="floor4654" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4654" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 416 )
 
-[node name="floor4667" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4667" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 608 )
 
-[node name="floor4668" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4668" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 800 )
 
-[node name="floor4665" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4665" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 480 )
 
-[node name="floor4667 3" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4667 3" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 672 )
 
-[node name="floor46674" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46674" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 864 )
 
-[node name="floor4666" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4666" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 544 )
 
-[node name="floor4667 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4667 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 736 )
 
-[node name="floor46673" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46673" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 928 )
 
-[node name="floor46676 2" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46676 2" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 992 )
 
-[node name="floor466763" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466763" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 1056 )
 
-[node name="floor466764" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466764" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 640, 1120 )
 
-[node name="floor466765" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466765" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 448, 1184 )
 
-[node name="floor466766" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466766" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 1184 )
 
-[node name="floor466767" parent="floors" instance=ExtResource( 2 )]
+[node name="floor466767" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 832, 1184 )
 
-[node name="floor46675" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46675" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 928 )
 
-[node name="floor46676" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46676" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 992 )
 
-[node name="floor46677" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46677" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 1056 )
 
-[node name="floor46678" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46678" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 704, 1120 )
 
-[node name="floor46679" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46679" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 512, 1184 )
 
-[node name="floor46680" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46680" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 768, 1184 )
 
-[node name="floor46681" parent="floors" instance=ExtResource( 2 )]
+[node name="floor46681" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 1184 )
 
-[node name="floor4655" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4655" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 416 )
 
-[node name="floor4656" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4656" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 352 )
 
-[node name="floor4657" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4657" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 288 )
 
-[node name="floor4658" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4658" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 960, 288 )
 
-[node name="floor4659" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4659" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 960, 352 )
 
-[node name="floor4660" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4660" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 960, 416 )
 
-[node name="floor4661" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4661" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 960, 480 )
 
-[node name="floor4662" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4662" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 960, 544 )
 
-[node name="floor4663" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4663" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 544 )
 
-[node name="flashingFloor" parent="floors" instance=ExtResource( 3 )]
+[node name="flashingFloor" parent="floors" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 448, 992 )
 
-[node name="floor4664" parent="floors" instance=ExtResource( 2 )]
+[node name="floor4664" parent="floors" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 896, 480 )
 
-[node name="player" parent="." instance=ExtResource( 4 )]
+[node name="player" parent="." instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 224, 256 )
 
-[node name="enemy" parent="." instance=ExtResource( 5 )]
+[node name="enemy" parent="." instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 928, 320 )
 
