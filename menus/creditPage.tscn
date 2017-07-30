@@ -1,0 +1,102 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://creditPage.gd" type="Script" id=1]
+[ext_resource path="res://fonts/MODES___.TTF" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 40
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 20
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+
+font/size = 20
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1024.0
+margin/bottom = 600.0
+script/script = ExtResource( 1 )
+okButtonPath = NodePath("Panel/Button")
+
+[node name="Panel" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 7.0
+margin/right = 1017.0
+margin/bottom = 593.0
+
+[node name="Label" type="Label" parent="Panel"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 23.0
+margin/top = 23.0
+margin/right = 107.0
+margin/bottom = 43.0
+custom_fonts/font = SubResource( 1 )
+text = "Credits"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label 2" type="Label" parent="Panel"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 53.0
+margin/top = 73.0
+margin/right = 329.0
+margin/bottom = 93.0
+custom_fonts/font = SubResource( 2 )
+text = "created by Pete Goodwin, July 2017"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 483.0
+margin/top = 513.0
+margin/right = 519.0
+margin/bottom = 539.0
+custom_fonts/font = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "OK"
+flat = false
+
+[connection signal="pressed" from="Panel/Button" to="." method="onOK"]
+
+

@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://welcomePage.gd" type="Script" id=1]
+[ext_resource path="res://fonts/MODES___.TTF" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 80
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 20
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1024.0
+margin/bottom = 600.0
+script/script = ExtResource( 1 )
+startButtonPath = NodePath("Panel/StartButton")
+creditsButtonPath = NodePath("Panel/CreditsButton")
+
+[node name="Panel" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 7.0
+margin/right = 1017.0
+margin/bottom = 593.0
+
+[node name="Label" type="Label" parent="Panel"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 34.0
+margin/top = 35.0
+margin/right = 688.0
+margin/bottom = 117.0
+custom_fonts/font = SubResource( 1 )
+text = "My Awesome Game"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="StartButton" type="Button" parent="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 813.0
+margin/top = 433.0
+margin/right = 945.0
+margin/bottom = 459.0
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Start Game"
+flat = false
+
+[node name="CreditsButton" type="Button" parent="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 813.0
+margin/top = 473.0
+margin/right = 945.0
+margin/bottom = 499.0
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Credits"
+flat = false
+
+[connection signal="pressed" from="Panel/StartButton" to="." method="on_start"]
+
+[connection signal="pressed" from="Panel/CreditsButton" to="." method="on_credits"]
+
+
