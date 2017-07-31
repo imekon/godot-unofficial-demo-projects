@@ -11,199 +11,36 @@ transform/pos = Vector2( 30, 30 )
 
 [node name="floorArea" type="Node2D" parent="."]
 
-editor/display_folded = true
-
 [node name="floor" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 258, 130 )
+transform/pos = Vector2( 354, 226 )
+transform/scale = Vector2( 4, 4 )
 
-[node name="floor1" parent="floorArea" instance=ExtResource( 1 )]
+[node name="floor14" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 322, 130 )
-
-[node name="floor5" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 258, 194 )
-
-[node name="floor8" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 578, 194 )
-
-[node name="floor11" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1026, 642 )
-
-[node name="floor12" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1026, 706 )
-
-[node name="floor13" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1026, 770 )
-
-[node name="floor6" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 258, 258 )
-
-[node name="floor7" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 258, 322 )
-
-[node name="floor2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 386, 130 )
-
-[node name="floor5 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 322, 194 )
-
-[node name="floor57 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 642, 194 )
-
-[node name="floor573" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1090, 642 )
-
-[node name="floor575" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1090, 706 )
-
-[node name="floor576" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1090, 770 )
-
-[node name="floor53" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 322, 258 )
-
-[node name="floor56 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 322, 322 )
-
-[node name="floor3" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 450, 130 )
+transform/pos = Vector2( 2, 130 )
+transform/scale = Vector2( 5, 7 )
 
 [node name="floor9" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 898, 194 )
-
-[node name="floor10" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 450 )
-
-[node name="floor5 3" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 386, 194 )
-
-[node name="floor57 3" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 706, 194 )
-
-[node name="floor574" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1154, 642 )
-
-[node name="floor575 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1154, 706 )
-
-[node name="floor5753" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1154, 770 )
-
-[node name="floor54" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 386, 258 )
-
-[node name="floor56 3" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 386, 322 )
+transform/pos = Vector2( 898, 386 )
+transform/scale = Vector2( 1, 7 )
 
 [node name="floor4" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 514, 194 )
-
-[node name="floor11 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 962, 642 )
-
-[node name="floor113" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 962, 706 )
-
-[node name="floor114" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 962, 770 )
-
-[node name="floor8 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 834, 194 )
-
-[node name="floor5 4" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 450, 194 )
-
-[node name="floor58 3" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 258 )
-
-[node name="floor584" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 514 )
-
-[node name="floor57" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 770, 194 )
-
-[node name="floor60" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1218, 642 )
-
-[node name="floor61" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1218, 706 )
-
-[node name="floor62" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 1218, 770 )
-
-[node name="floor55" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 450, 258 )
-
-[node name="floor58" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 322 )
-
-[node name="floor59" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 578 )
+transform/pos = Vector2( 674, 194 )
+transform/scale = Vector2( 6, 1 )
 
 [node name="floor56" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 450, 322 )
-
-[node name="floor58 2" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 386 )
+transform/pos = Vector2( 194, 258 )
 
 [node name="floor583" parent="floorArea" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 898, 642 )
-
-[node name="floor585" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 706 )
-
-[node name="floor586" parent="floorArea" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 898, 770 )
+transform/pos = Vector2( 1058, 706 )
+transform/scale = Vector2( 6, 3 )
 
 [node name="wallArea" type="Node2D" parent="."]
-
-editor/display_folded = true
 
 [node name="wall" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -216,6 +53,18 @@ transform/pos = Vector2( 962, 322 )
 [node name="wall10" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 194, 194 )
+
+[node name="wall19" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 194 )
+
+[node name="wall20" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 258 )
+
+[node name="wall21" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 322 )
 
 [node name="wall5" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -265,6 +114,10 @@ transform/pos = Vector2( 962, 258 )
 
 transform/pos = Vector2( 194, 130 )
 
+[node name="wall103" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 130 )
+
 [node name="wall8" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 578, 130 )
@@ -283,7 +136,19 @@ transform/pos = Vector2( 962, 386 )
 
 [node name="wall54" parent="wallArea" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 194, 258 )
+transform/pos = Vector2( 130, 386 )
+
+[node name="wall59" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 130, -126 )
+
+[node name="wall58" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 386 )
+
+[node name="wall59 2" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, -126 )
 
 [node name="wall53" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -304,6 +169,18 @@ transform/pos = Vector2( 962, 514 )
 [node name="wall54 2" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 194, 386 )
+
+[node name="wall546" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 194, -126 )
+
+[node name="wall545" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -126, 386 )
+
+[node name="wall546 2" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -126, -126 )
 
 [node name="wall543" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -328,6 +205,14 @@ transform/pos = Vector2( 706, 258 )
 [node name="wall7 2" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 322, 386 )
+
+[node name="wall76" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 2, 386 )
+
+[node name="wall77" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 2, -126 )
 
 [node name="wall73" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -365,6 +250,26 @@ transform/pos = Vector2( 962, 194 )
 
 transform/pos = Vector2( 194, 66 )
 
+[node name="wall92" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 66 )
+
+[node name="wall90" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 194, 2 )
+
+[node name="wall92 3" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, 2 )
+
+[node name="wall91" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 194, -62 )
+
+[node name="wall92 2" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -190, -62 )
+
 [node name="wall7 3" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 450, 386 )
@@ -393,6 +298,14 @@ transform/pos = Vector2( 642, 258 )
 
 transform/pos = Vector2( 258, 386 )
 
+[node name="wall17" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -62, 386 )
+
+[node name="wall18" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( -62, -126 )
+
 [node name="wall12" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1026, 578 )
@@ -416,6 +329,14 @@ transform/pos = Vector2( 770, 258 )
 [node name="wall34" parent="wallArea" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 386, 386 )
+
+[node name="wall40" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 66, 386 )
+
+[node name="wall41" parent="wallArea" instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 66, -126 )
 
 [node name="wall38" parent="wallArea" instance=ExtResource( 2 )]
 
@@ -455,7 +376,8 @@ transform/pos = Vector2( 514, 258 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 258, 130 )
+transform/pos = Vector2( 274, 146 )
+oxygen = 100
 
 [node name="HUDlayer" type="CanvasLayer" parent="."]
 

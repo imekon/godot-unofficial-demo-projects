@@ -5,6 +5,7 @@ const WALK_SPEED = 200
 var velocity = Vector2()
 
 export var health = 100
+export var oxygen = 100
 
 func _fixed_process(delta):
 	if (Input.is_action_pressed("ui_left")):
