@@ -377,7 +377,6 @@ transform/pos = Vector2( 514, 258 )
 [node name="player" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 274, 146 )
-oxygen = 100
 
 [node name="HUDlayer" type="CanvasLayer" parent="."]
 
