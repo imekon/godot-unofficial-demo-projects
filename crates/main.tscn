@@ -180,35 +180,35 @@ transform/pos = Vector2( 608, 368 )
 
 [node name="crate" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 464, 288 )
+transform/pos = Vector2( 464, 328 )
 
 [node name="crate 2" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 464, 224 )
+transform/pos = Vector2( 464, 280 )
 
 [node name="crate3" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 464, 160 )
+transform/pos = Vector2( 464, 232 )
 
 [node name="crate4" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 464, 96 )
+transform/pos = Vector2( 464, 184 )
 
 [node name="crate5" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 592, 288 )
+transform/pos = Vector2( 592, 328 )
 
 [node name="crate6" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 592, 224 )
+transform/pos = Vector2( 592, 280 )
 
 [node name="crate7" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 592, 160 )
+transform/pos = Vector2( 592, 232 )
 
 [node name="crate8" parent="crates" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 592, 96 )
+transform/pos = Vector2( 592, 184 )
 
 [node name="ballSpawn" type="Position2D" parent="."]
 
