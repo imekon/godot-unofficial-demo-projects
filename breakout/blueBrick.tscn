@@ -7,7 +7,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 24, 8 )
 
-[node name="blueBrick" type="KinematicBody2D"]
+[node name="blueBrick" type="StaticBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
@@ -15,7 +15,10 @@ shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
-collision/margin = 0.08
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
 

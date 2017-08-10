@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://redBrick.tscn" type="PackedScene" id=1]
 [ext_resource path="res://greenBrick.tscn" type="PackedScene" id=2]
@@ -6,6 +6,21 @@
 [ext_resource path="res://wall.tscn" type="PackedScene" id=4]
 [ext_resource path="res://ball.tscn" type="PackedScene" id=5]
 [ext_resource path="res://bat.tscn" type="PackedScene" id=6]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16, 608, -48, 608, -48, -32, 16, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16, 16, -48, -32, 1056, -32, 1008, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1008, 16, 1056, -32, 1056, 608, 1008, 608 )
 
 [node name="level01" type="Node2D"]
 
@@ -303,8 +318,6 @@ transform/pos = Vector2( 864, 128 )
 
 [node name="walls" type="Node2D" parent="."]
 
-editor/display_folded = true
-
 [node name="wall" parent="walls" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( -16, -16 )
@@ -453,9 +466,35 @@ transform/pos = Vector2( 1040, 624 )
 
 transform/pos = Vector2( -16, 624 )
 
+[node name="StaticBody2D" type="StaticBody2D" parent="walls"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Collision" type="CollisionPolygon2D" parent="walls/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 16, 608, 16, 16, 1008, 16, 1008, 608, 1056, 608, 1056, -32, -48, -32, -48, 608 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
 [node name="ball" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 592, 416 )
+transform/pos = Vector2( 592, 368 )
 
 [node name="bat" parent="." instance=ExtResource( 6 )]
 
