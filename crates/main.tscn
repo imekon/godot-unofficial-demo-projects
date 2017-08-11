@@ -1,9 +1,19 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://ball.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ground.tscn" type="PackedScene" id=3]
 [ext_resource path="res://crate.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 59, 27 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 43.5802, 16 )
 
 [node name="main" type="Node2D"]
 
@@ -13,8 +23,6 @@ ball_spawn_path = NodePath("ballSpawn")
 strength = 1.5
 
 [node name="ground" type="Node2D" parent="."]
-
-editor/display_folded = true
 
 [node name="ground3 2" parent="ground" instance=ExtResource( 3 )]
 
@@ -148,6 +156,38 @@ transform/pos = Vector2( 992, 592 )
 
 transform/pos = Vector2( 1024, 592 )
 
+[node name="StaticBody2D" type="StaticBody2D" parent="ground"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.62712, 0, 0, 0.592593, 528, 368 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 11.932, 0, 0, 1, 520, 592 )
+shapes/1/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground/StaticBody2D"]
+
+transform/pos = Vector2( 528, 368 )
+transform/scale = Vector2( 1.62712, 0.592593 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CollisionShape2D 2" type="CollisionShape2D" parent="ground/StaticBody2D"]
+
+transform/pos = Vector2( 520, 592 )
+transform/scale = Vector2( 11.932, 1 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 1
+
 [node name="shelf" type="Node2D" parent="."]
 
 editor/display_folded = true
@@ -177,6 +217,8 @@ transform/pos = Vector2( 576, 368 )
 transform/pos = Vector2( 608, 368 )
 
 [node name="crates" type="Node2D" parent="."]
+
+editor/display_folded = true
 
 [node name="crate" parent="crates" instance=ExtResource( 4 )]
 
