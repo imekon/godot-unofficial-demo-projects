@@ -34,6 +34,7 @@ font/font = ExtResource( 8 )
 [node name="level01" type="Node2D"]
 
 script/script = ExtResource( 1 )
+level = 1
 
 [node name="bricks" type="Node2D" parent="."]
 

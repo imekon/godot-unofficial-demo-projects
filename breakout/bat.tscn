@@ -29,4 +29,8 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
+[node name="anchor" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, 32 )
+
 
