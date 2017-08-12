@@ -2,7 +2,6 @@ extends Node
 
 var lives = 5
 var score = 0
-var level = 1
 
 func _ready():
 	pass
@@ -19,7 +18,6 @@ func getScore():
 func addScore(value):
 	score += value
 	
-func changeLevel(value):
-	level += value
+func changeLevel(level):
 	var scene = "res://level%02d.tscn" % level
 	get_tree().change_scene(scene)
