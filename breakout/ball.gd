@@ -1,21 +1,49 @@
 extends RigidBody2D
 
-var ball
+# Various settings on RigidBody2D have been altered:
+# Mode:				Character
+# Friction:			0
+# Bounce:			1
+# Gravity Scale:	0
+# Contacts Rep.:	1
+# Contact Monitor:	ON
+# Damp Override
+#	Linear:			0
+#	Angular:		0
 
 func _ready():
-	var n = randf() * PI / 2
-	ball = get_node(".")
+	# Set the initial linear velocity
 	compute_velocity()
 	set_fixed_process(true)
 
 func compute_velocity():
+	# Compute a direction
 	var n = randf() * PI / 2
 	var velocity = Vector2(sin(n), -cos(n))
-	ball.set_linear_velocity(velocity * 200)
+	set_linear_velocity(velocity * 200)
+	
+func compute_collision(bodies):
+	# For each body we collide with, assuming group "brick"
+	for body in bodies:
+		if body.is_in_group("brick"):
+			# Get the score of the brick
+			var score = body.getScore()
+			
+			# Add score to global score
+			get_node("/root/globals").addScore(score)
+			
+			# Delete the colliding body, i.e. brick
+			body.queue_free()
 		
 func _fixed_process(delta):
-	var pos = ball.get_pos()
+	# Get a list of bodies we're bumping into
+	var bodies = get_colliding_bodies()
+	compute_collision(bodies)
+	
+	# Are we off screen, if so, drop a life and reset
+	var pos = get_pos()
 	if pos.y > 650:
-		ball.set_pos(Vector2(512, 400))
+		set_pos(Vector2(512, 400))
 		compute_velocity()
+		get_node("/root/globals").decLives()
 
