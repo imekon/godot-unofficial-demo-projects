@@ -218,8 +218,6 @@ transform/pos = Vector2( 608, 368 )
 
 [node name="crates" type="Node2D" parent="."]
 
-editor/display_folded = true
-
 [node name="crate" parent="crates" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 464, 328 )

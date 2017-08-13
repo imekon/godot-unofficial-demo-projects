@@ -5,18 +5,18 @@
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 10.0
+radius = 12.0
 
 [node name="ball" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 1.23077, 0, 0, 1.23077, 0, 0 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 0
-mass = 0.5
+mass = 3.0
 friction = 1.0
 bounce = 0.7
 gravity_scale = 1.0
@@ -37,7 +37,6 @@ texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-transform/scale = Vector2( 1.23077, 1.23077 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0

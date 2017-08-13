@@ -5,20 +5,20 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 9.74999, 10 )
+extents = Vector2( 24, 24 )
 
 [node name="crate" type="RigidBody2D"]
 
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 2.46154, 0, 0, 2.46154, 0, 1.90735e-06 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 1.90735e-06 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 0
-mass = 1.0
+mass = 4.0
 friction = 1.0
-bounce = 0.2
+bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = 0
@@ -38,7 +38,6 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 transform/pos = Vector2( 0, 1.90735e-06 )
-transform/scale = Vector2( 2.46154, 2.46154 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0

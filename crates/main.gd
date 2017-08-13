@@ -5,7 +5,7 @@ export (NodePath) var ball_spawn_path
 export (float) var strength = 2.0
 onready var ball_spawn = get_node(ball_spawn_path)
 
-var ball_count = 6
+var ball_count = 3
 
 func _ready():
 	set_process_input(true)
