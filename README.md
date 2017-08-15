@@ -1,5 +1,5 @@
 # godot-demo-projects
-Sample GODOT projects by Pete Goodwin (based on tutorials from documentation, Q&A and videos)
+Sample unofficial GODOT projects by Pete Goodwin (based on tutorials from documentation, Q&A and videos)
 ## Breakout
 Block killing frenzy
 ## Crates
