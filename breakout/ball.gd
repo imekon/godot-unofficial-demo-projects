@@ -37,7 +37,7 @@ func compute_collision(delta, bodies):
 			get_node("/root/globals").addScore(score)
 			
 			# Delete the colliding body, i.e. brick
-			body.queue_free()
+			body.destroy()
 			
 		if body.get_name() == "bat":
 			var speed = get_linear_velocity().length()

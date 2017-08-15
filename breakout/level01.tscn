@@ -38,8 +38,6 @@ level = 1
 
 [node name="bricks" type="Node2D" parent="."]
 
-editor/display_folded = true
-
 [node name="redBrick" parent="bricks" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 160, 320 )
