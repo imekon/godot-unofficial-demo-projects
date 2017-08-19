@@ -5,6 +5,8 @@ const WALK_SPEED = 200
 var velocity = Vector2()
 
 func _fixed_process(delta):
+	velocity.x = 0
+	velocity.y = 0
 	if (Input.is_action_pressed("ui_left")):
 		velocity.x = -WALK_SPEED
 	elif (Input.is_action_pressed("ui_right")):
@@ -13,9 +15,6 @@ func _fixed_process(delta):
 		velocity.y = -WALK_SPEED
 	elif (Input.is_action_pressed("ui_down")):
 		velocity.y = WALK_SPEED
-	else:
-		velocity.x = 0
-		velocity.y = 0
 		
 	var motion = velocity * delta
 	motion = move(motion)
