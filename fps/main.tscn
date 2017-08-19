@@ -245,11 +245,12 @@ max_lines_visible = -1
 
 [node name="FPS" type="Label" parent="CanvasLayer"]
 
+anchor/left = 1
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 930.0
+margin/left = 94.0
 margin/top = 20.0
 margin/right = 991.0
 margin/bottom = 34.0
