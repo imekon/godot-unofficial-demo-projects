@@ -2,11 +2,15 @@ extends RigidBody
 
 const view_sensitivity = 0.25
 const SPEED = 20
+const BALL_SPEED = 35
 
 var yaw = 0   # yaw is left/right (y axis)
 var pitch = 0 # pitch is up/down (x axis)
 
 onready var camera = get_node("Camera")
+onready var main = get_tree().get_root().get_node("main")
+onready var ballScene = preload("res://ball.scn")
+onready var ballSpawnPoint = get_node("ballSpawnPoint")
 
 func _ready():
 	set_process_input(true)
@@ -41,5 +45,16 @@ func _input(event):
 		var x = sin(deg2rad(-yaw) + PI/2)
 		var z = -cos(deg2rad(yaw) - PI/2)
 		set_linear_velocity(Vector3(x, 0, z) * SPEED)
+	elif event.is_action_pressed("ui_fire"):
+		fire_ball()
 	else:
 		set_linear_velocity(Vector3())
+		
+func fire_ball():
+	var ball = ballScene.instance()
+	var x = sin(deg2rad(-yaw))
+	var z = -cos(deg2rad(yaw))
+	var pos = ballSpawnPoint.get_global_transform().origin
+	ball.set_translation(pos)
+	ball.set_linear_velocity(Vector3(x, 0, z) * BALL_SPEED)
+	main.add_child(ball)

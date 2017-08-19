@@ -7,4 +7,4 @@ func _ready():
 	
 func _fixed_process(delta):
 	fpsLabel.set_text("FPS: " + str(OS.get_frames_per_second()))
-	
+

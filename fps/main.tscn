@@ -107,7 +107,7 @@ _update_shape_index = 0
 [node name="player" type="RigidBody" parent="."]
 
 _import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.98575, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.98575, 12.2106 )
 input/ray_pickable = true
 input/capture_on_drag = false
 shape_count = 1
@@ -155,6 +155,11 @@ _import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
+
+[node name="ballSpawnPoint" type="Position3D" parent="player"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -4 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 
