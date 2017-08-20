@@ -5,8 +5,10 @@ These are all works in progress.
 Block killing frenzy
 ## Crates
 Crate smashing
+## FPS
+First person shooter that can fire balls
 ## Health
-...
+RPG style with HUD overlay
 ## Space
 A simple space game
 ## Menus
