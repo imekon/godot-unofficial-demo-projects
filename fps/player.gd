@@ -9,7 +9,7 @@ var pitch = 0 # pitch is up/down (x axis)
 
 onready var camera = get_node("Camera")
 onready var main = get_tree().get_root().get_node("main")
-onready var ballScene = preload("res://ball.scn")
+onready var ballScene = preload("res://ball.tscn")
 onready var ballSpawnPoint = get_node("ballSpawnPoint")
 
 func _ready():
