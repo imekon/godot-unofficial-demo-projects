@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://tracking.gd" type="Script" id=1]
+
+[node name="tracking" type="Panel"]
+
+visibility/opacity = 0.7
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -144.0
+margin/top = -80.0
+margin/right = 144.0
+margin/bottom = 80.0
+script/script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 352.0
+margin/bottom = 14.0
+text = "Tracking"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
