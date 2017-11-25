@@ -27,9 +27,22 @@ func _onAddButton():
 	displayHighScores()
 	
 func displayHighScores():
+	var items = Array()
 	scoreList.clear()
 	for score in highScores:
-		scoreList.add_item(score + " - " + str(highScores[score]))
+		items.append(score)
+		
+	items.sort_custom(self, "sortItem")
+	
+	for item in items:
+		scoreList.add_item(item + " - " + str(highScores[item]))
+	
+func sortItem(obj1, obj2):
+	var score1 = highScores[obj1]
+	var score2 = highScores[obj2]
+	if (score1 < score2):
+		return false
+	return true
 
 func readHighScores():
 	var file = File.new()
