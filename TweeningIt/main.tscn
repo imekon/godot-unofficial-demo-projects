@@ -57,9 +57,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 7.0
-margin/top = 7.0
+margin/top = 6.0
 margin/right = 1017.0
-margin/bottom = 593.0
+margin/bottom = 592.0
 
 [node name="FadeOutButton" type="Button" parent="Panel"]
 
