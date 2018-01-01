@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/rocket.gd" type="Script" id=1]
+[ext_resource path="res://images/rocket.png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -0.0310822, -16.4455, 7.57939, -6.69458, 8.29286, 15.4233, -8.35503, 15.899, -8.11719, -5.50544 )
+
+[node name="rocket" type="RigidBody2D"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+transform/pos = Vector2( -0.0310743, -0.27325 )
+rect = Rect2( -8, -16, 16, 32 )
+
+[connection signal="exit_screen" from="VisibilityNotifier2D" to="." method="_on_RocketExitScreen"]
+
+
